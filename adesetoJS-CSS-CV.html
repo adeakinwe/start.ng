@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<title>Adeseto Abiola CV</title>
+		<style> body{background-color: Aqua;} h2,h3{font-weight: bold; font-family: Georgia, Arial, Mono;}
+			h3{border: 2px solid black; padding: 5px;}
+			.c{text-align:center;} #n,#e,#t,#m{border: blue 2px solid; padding:5px;} .f{float:right;}
+			.s{background-color: purple;}
+		</style> 
+		<script type='text/JavaScript'>
+		 function validate() {
+			 if (document.contact.user.value==' '){
+			 	alert('Please enter your fullname');
+				document.contact.user.focus();
+				return false
+				}
+			 if (document.contact.mail.value==' '){
+				 alert('Please enter your email address');
+				 document.contact.mail.focus();
+				 return false
+			 }
+			 if (document.contact.subject.value==' '){
+				 alert('Please give your message a title');
+				 document.contact.subject.focus();
+				 return false
+			 }
+			 if (document.contact.message.value==' '){
+				 alert('Please leave a comment about this CV page');
+				 document.contact.subject.focus();
+				 return false
+			 }
+			 return true;
+		 }
+		</script>
+		<script type='text/JavaScript'>
+			function validateEmail() {
+				var emailID=document.contact.mail.value;
+					at=emailID.indexOf('@');
+					dot=emailID.lastIndexOf('.');
+					dif=at-dot
+				if (at<1 || dif<2){
+					alert('Please enter a valid email address');
+					document.contact.mail.focus();
+					return false;
+				}
+					return true;
+			}
+		</script>
+		</head>
+			<body>
+			<p><center><h2>Adeseto Abiola AKINWE</center></h2></p>
+			<!--font size="+3" text-align='center'><b>Adeseto Abiola AKINWE</b></font -->
+			<img class='f' src="http://res.cloudinary.com/adeakinwe/image/upload/v1566569144/adeakinwe.jpg" alt="cloudinary upload" height='280' width='164';>	
+			<br><center>Mobile: 07036010673</center> 
+			<br><center>email:<a href="MailTo:adeakinwe@gmail.com" link='green'> adeakinwe@gmail.com </a></center></p>
+			<h3> PROFILE SUMMARY </h3>
+			<p> I'm an enterprising young professional with a sound mathematical background who is equipped with 			requisite skills and valuable experience in ICT, finance, administrative, accounting and education 			sector and also self-motivated to initiate values that has a proven track record in conforming with industry standard and meeting corporate goals.</p>
+			<div><h3> EDUCATION AND QUALIFICATIONS</h3>
+			<p><b>2018</b> &emsp;M.Sc (Mathematics)
+			<br>&emsp;&emsp;&emsp;University of Ibadan</p>
+			<p><b>2014</b> &emsp;B.Sc.Ed (Mathematics), Second Class Hons
+			<br>&emsp;&emsp;&emsp;Adekunle Ajasin University, Akungba-Akoko, Ondo State, Nigeria</p></div>
+			<div><h3> PROFESSIONAL AND IT SKILLS</h3>
+			<p> Microsoft Office Suites (Word, Excel, PowerPoint), MATLAB, SPSS, QuickBooks, Python programming, 			LaTeX typing, Blogging, HTML, CSS, JavaScript</p><div>
+			<div><h3> WORK EXPERIENCE</h3>
+			<p><b>2018 - Till Date &emsp;&nbsp; Admin/Finance Officer</b>
+			<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Waste Point Limited, Abijo, Lekki, Lagos.</p>
+			<p><b>2017 &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Admin/Account Officer</b>
+			<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;Bever Water, Ajah, Lagos</p>
+			<p><b>2014-2015 &emsp;&emsp;&emsp;National Youth Service Corps (NYSC)</b>
+			<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; Mathematics Teacher, Community Secondary 					School, Amafor-Ugbawka, Enugu State.</p></div>
+			<div><h3>CORE COMPETENCIES/INTERPERSONAL SKILLS</h3>
+			<p><ul><li>High level of sportsmanship and interactive skills.</li>
+ 			<li>Strategic planning, prioritization and swift execution.</li>
+ 			<li>Ability to multi-task and deliver timely under pressure.</li>
+ 			<li>Ability to work independently or in a team with proactive approach.</li>
+ 			<li>Ability to work with minimal or no supervision</li></ul></p></div-->
+			<div><h3> INTERESTS</h3>
+			<p> Research, Programming, Board games (Chess, Monopoly, Scrabble), Sports, Music</p></div>
+			<div><h3><b> PERSONAL DATA</b></h3>
+			<p><b>Sex:</b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Male
+			<br><b>Marital Status:</b> &emsp; Single
+			<br><b>State of Origin:</b> &emsp; Ondo </p></div>			
+			<div><h3>REFEREE</h3>
+			<p>Available upon request</p></div>
+	<div class='c'>
+		<form name='contact' method='post' action='MailTo:adeakinwe@gmail.com' onSubmit= 'return validate()'>
+			<p><h2>CONTACT FORM</h2></p>
+	<p><label for='n'>Name:</label><input ID='n' Name='user' type='text' size='40' 
+		value=' ' placeholder="Enter your full name" minLength='4' required></p>
+	<p><label for ='e'>Email:</label><input ID='e' Name='mail' value=' ' type="email" size='40'
+		placeholder="Enter your email address" required></p>
+	<p ><label for='t'>Title:</label><input ID='t' Name='subject' placeholder='subject' value=' ' type='text' size='40' required></p>
+	<p><label for='m' text-align='center'>Message:</label><textarea name='message' value=' ' 
+		placeholder='Please leave a comment about this CV page' rows='20' cols='60' ID='m' minLength='20' required> </textarea></p>
+		<input class='s' name='submit' type='submit' value=' Submit '></p>
+	</form>
+	</div>
+	</body>
+	</html>
